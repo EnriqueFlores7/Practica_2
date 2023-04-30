@@ -5,4 +5,4 @@ Los paquetes instalados son (Node):
 4.Cors
 
 
-Atentamente con amor y cariño : Enrique Flores Ortiz
+Atentamente con amor y cariño : Enrique 
