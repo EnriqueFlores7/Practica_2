@@ -16,11 +16,11 @@ app.get('/login',(req,res)=>{
     res.render('page-login');
 });
 
-app.get('/404',(req,res)=>{
+app.get('*',(req,res)=>{
     res.render('page-error-404');
 });
 
-app.get('/index',(req,res)=>{
+app.get('/dashboard',(req,res)=>{
     res.render('index');
 });
 
