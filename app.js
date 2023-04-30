@@ -20,6 +20,10 @@ app.get('/404',(req,res)=>{
     res.render('page-error-404');
 });
 
+app.get('/index',(req,res)=>{
+    res.render('index');
+});
+
 app.listen(port,()=>{
     console.log('Serviodr corriendo en el puerto: ',port);
   });
