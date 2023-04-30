@@ -1,4 +1,4 @@
-Los paquetes instalados son:
+Los paquetes instalados son (Node):
 1.Express
 2.Body-parser
 3.Hbs
