@@ -20,6 +20,10 @@ app.get('/login',(req,res)=>{
     res.render('page-login');
 });
 
+app.get('/categorias',(req,res)=>{
+    res.render('invoices');
+});
+
 app.get('*',(req,res)=>{
     res.render('page-error-404');
 });
