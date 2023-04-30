@@ -12,6 +12,10 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
+app.get('/',(req,res)=>{
+    res.render('index');
+});
+
 app.get('/login',(req,res)=>{
     res.render('page-login');
 });
@@ -20,9 +24,6 @@ app.get('*',(req,res)=>{
     res.render('page-error-404');
 });
 
-app.get('/dashboard',(req,res)=>{
-    res.render('index');
-});
 
 app.listen(port,()=>{
     console.log('Serviodr corriendo en el puerto: ',port);
