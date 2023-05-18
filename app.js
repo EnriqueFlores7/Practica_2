@@ -20,7 +20,7 @@ app.get('/login',(req,res)=>{
     res.render('page-login');
 });
 
-app.get('/categorias',(req,res)=>{
+app.get('/productos',(req,res)=>{
     res.render('table-datatable-basic')
 });
 

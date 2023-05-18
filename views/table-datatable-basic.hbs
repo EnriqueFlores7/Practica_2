@@ -901,7 +901,8 @@
                                                     <a class="timeline-panel text-muted" href="javascript:void(0);">
                                                         <span>10 minutes ago</span>
                                                         <h6 class="mb-0">Youtube, a video-sharing website, goes live
-                                                            <strong class="text-primary">$500</strong>.</h6>
+                                                            <strong class="text-primary">$500</strong>.
+                                                        </h6>
                                                     </a>
                                                 </li>
                                                 <li>
@@ -1302,7 +1303,48 @@
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">Altas Productos</h4>
-                            <button type="button" class="btn btn-success">Nuevo</button>
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#exampleModalCenter">Nuevo</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Nuevo Producto</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Descripción</p>
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control input-default "
+                                                    placeholder="Información">
+                                            </div>
+                                            <p>Categoría</p>
+                                            <select class="default-select form-control wide mb-3">
+                                                <option>Alimentos y Bebidas</option>
+                                                <option>Option 2</option>
+                                                <option>Option 3</option>
+                                            </select>
+                                            <p>Proveedor</p>
+                                            <select class="default-select form-control wide mb-3">
+                                                <option>Grupo LALA</option>
+                                                <option>Option 2</option>
+                                                <option>Option 3</option>
+                                            </select>
+                                            <div class="mb-3 col-md-2">
+                                                <label class="form-label">Precio</label>
+                                                <input type="text" class="form-control" placeholder="0">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger light btn-sm"
+                                                data-bs-dismiss="modal">Cancelar</button>
+                                            <button type="button" class="btn btn-success btn-sm">Actualizar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -1323,11 +1365,84 @@
                                             <td>Architect</td>
                                             <td>
                                                 <div class="d-flex">
-                                                    <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
+                                                    <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter2"><i
                                                             class="fas fa-pencil-alt"></i></a>
-                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                    <!--Modal -->
+                                                    <div class="modal fade" id="exampleModalCenter2">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title">Actualizar Producto</h5>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal">
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <p>Descripción</p>
+                                                                    <div class="mb-3">
+                                                                        <input type="text"
+                                                                            class="form-control input-default "
+                                                                            placeholder="Información">
+                                                                    </div>
+                                                                    <p>Categoría</p>
+                                                                    <select
+                                                                        class="default-select form-control wide mb-3">
+                                                                        <option>Alimentos y Bebidas</option>
+                                                                        <option>Option 2</option>
+                                                                        <option>Option 3</option>
+                                                                    </select>
+                                                                    <p>Proveedor</p>
+                                                                    <select
+                                                                        class="default-select form-control wide mb-3">
+                                                                        <option>Grupo LALA</option>
+                                                                        <option>Option 2</option>
+                                                                        <option>Option 3</option>
+                                                                    </select>
+                                                                    <div class="mb-3 col-md-2">
+                                                                        <label class="form-label">Precio</label>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="0">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button"
+                                                                        class="btn btn-danger light btn-sm"
+                                                                        data-bs-dismiss="modal">Cancelar</button>
+                                                                    <button type="button"
+                                                                        class="btn btn-primary btn-sm">Actualizar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter3"><i
                                                             class="fa fa-trash"></i></a>
-                                                </div>
+                                                    <!--Modal -->
+                                                    <div class="modal fade" id="exampleModalCenter3">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title">Eliminar Producto</h5>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal">
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <p>Estas seguro de que quieres eliminar el producto ?</p>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button"
+                                                                        class="btn btn-danger light btn-sm"
+                                                                        data-bs-dismiss="modal">Cancelar</button>
+                                                                    <button type="button"
+                                                                        class="btn btn-danger btn-sm">Eliminar
+                                                                        </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                             </td>
                                         </tr>
                                         <tr>
@@ -1349,20 +1464,6 @@
                                                     src="images/profile/small/pic3.jpg" alt=""></td>
                                             <td>Ashton Cox</td>
                                             <td>Junior Technical</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
-                                                            class="fas fa-pencil-alt"></i></a>
-                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
-                                                            class="fa fa-trash"></i></a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle" width="35"
-                                                    src="images/profile/small/pic4.jpg" alt=""></td>
-                                            <td>Cedric Kelly</td>
-                                            <td>Developer</td>
                                             <td>
                                                 <div class="d-flex">
                                                     <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
