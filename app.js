@@ -11,7 +11,7 @@ hbs.registerPartials(__dirname + '/views/partials',()=>{});
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
-
+//Paginas en uso
 app.get('/',(req,res)=>{
     res.render('index');
 });
