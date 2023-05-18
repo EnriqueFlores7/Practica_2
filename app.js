@@ -34,5 +34,5 @@ app.get('*',(req,res)=>{
 
 
 app.listen(port,()=>{
-    console.log('Serviodr corriendo en el puerto: ',port);
+    console.log('Serviodor corriendo en el puerto: ',port);
 });
