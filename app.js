@@ -21,7 +21,7 @@ app.get('/login',(req,res)=>{
 });
 
 app.get('/productos',(req,res)=>{
-    res.render('table-datatable-basic')
+    res.render('table-datatable-basic-pro')
 });
 
 app.get('/categorias',(req,res)=>{
