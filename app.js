@@ -31,8 +31,6 @@ app.get('/categorias',(req,res)=>{
 app.get('*',(req,res)=>{
     res.render('page-error-404');
 });
-
-
 app.listen(port,()=>{
     console.log('Serviodor corriendo en el puerto: ',port);
 });
