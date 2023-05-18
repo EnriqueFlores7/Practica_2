@@ -24,6 +24,10 @@ app.get('/productos',(req,res)=>{
     res.render('table-datatable-basic')
 });
 
+app.get('/categorias',(req,res)=>{
+    res.render('table-datatable-basic-cat')
+});
+
 app.get('*',(req,res)=>{
     res.render('page-error-404');
 });
