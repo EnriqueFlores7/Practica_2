@@ -21,10 +21,6 @@ app.get('/login',(req,res)=>{
 });
 
 app.get('/categorias',(req,res)=>{
-    res.render('invoices');
-});
-
-app.get('/categorias2',(req,res)=>{
     res.render('table-datatable-basic')
 });
 
