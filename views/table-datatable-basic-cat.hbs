@@ -1310,37 +1310,29 @@
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title">Nuevo Producto</h5>
+                                            <h5 class="modal-title">Altas de categorias</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal">
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <p>Descripción</p>
+                                            <p>Nombre:</p>
                                             <div class="mb-3">
                                                 <input type="text" class="form-control input-default "
                                                     placeholder="Información">
                                             </div>
-                                            <p>Categoría</p>
-                                            <select class="default-select form-control wide mb-3">
-                                                <option>Alimentos y Bebidas</option>
-                                                <option>Option 2</option>
-                                                <option>Option 3</option>
-                                            </select>
-                                            <p>Proveedor</p>
-                                            <select class="default-select form-control wide mb-3">
-                                                <option>Grupo LALA</option>
-                                                <option>Option 2</option>
-                                                <option>Option 3</option>
-                                            </select>
-                                            <div class="mb-3 col-md-2">
-                                                <label class="form-label">Precio</label>
-                                                <input type="text" class="form-control" placeholder="0">
+                                            <p>Observaciones</p>
+                                            <div class="basic-form">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <textarea class="form-control" rows="4" id="comment"></textarea>
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-danger light btn-sm"
                                                 data-bs-dismiss="modal">Cancelar</button>
-                                            <button type="button" class="btn btn-success btn-sm">Actualizar</button>
+                                            <button type="button" class="btn btn-success btn-sm">Guardar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1379,30 +1371,20 @@
                                                                     </button>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    <p>Descripción</p>
+                                                                    <p>Nombre:</p>
                                                                     <div class="mb-3">
                                                                         <input type="text"
                                                                             class="form-control input-default "
                                                                             placeholder="Información">
                                                                     </div>
-                                                                    <p>Categoría</p>
-                                                                    <select
-                                                                        class="default-select form-control wide mb-3">
-                                                                        <option>Alimentos y Bebidas</option>
-                                                                        <option>Option 2</option>
-                                                                        <option>Option 3</option>
-                                                                    </select>
-                                                                    <p>Proveedor</p>
-                                                                    <select
-                                                                        class="default-select form-control wide mb-3">
-                                                                        <option>Grupo LALA</option>
-                                                                        <option>Option 2</option>
-                                                                        <option>Option 3</option>
-                                                                    </select>
-                                                                    <div class="mb-3 col-md-2">
-                                                                        <label class="form-label">Precio</label>
-                                                                        <input type="text" class="form-control"
-                                                                            placeholder="0">
+                                                                    <p>Observaciones</p>
+                                                                    <div class="basic-form">
+                                                                        <form>
+                                                                            <div class="mb-3">
+                                                                                <textarea class="form-control" rows="4"
+                                                                                    id="comment"></textarea>
+                                                                            </div>
+                                                                        </form>
                                                                     </div>
                                                                 </div>
                                                                 <div class="modal-footer">
@@ -1415,8 +1397,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter3"><i
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"  data-bs-toggle="modal" 
+                                                    data-bs-target="#exampleModalCenter3"><i
                                                             class="fa fa-trash"></i></a>
                                                     <!--Modal -->
                                                     <div class="modal fade" id="exampleModalCenter3">
@@ -1429,7 +1411,8 @@
                                                                     </button>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    <p>Estas seguro de que quieres eliminar el producto ?</p>
+                                                                    <p>Estas seguro de que quieres eliminar la categoria
+                                                                        ? </p>
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button"
@@ -1437,7 +1420,7 @@
                                                                         data-bs-dismiss="modal">Cancelar</button>
                                                                     <button type="button"
                                                                         class="btn btn-danger btn-sm">Eliminar
-                                                                        </button>
+                                                                    </button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1452,9 +1435,11 @@
                                             <td>Accountant</td>
                                             <td>
                                                 <div class="d-flex">
-                                                    <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
+                                                    <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter2"><i
                                                             class="fas fa-pencil-alt"></i></a>
-                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter3"><i
                                                             class="fa fa-trash"></i></a>
                                                 </div>
                                             </td>
@@ -1466,9 +1451,11 @@
                                             <td>Junior Technical</td>
                                             <td>
                                                 <div class="d-flex">
-                                                    <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
+                                                    <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter2"><i
                                                             class="fas fa-pencil-alt"></i></a>
-                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter3"><i
                                                             class="fa fa-trash"></i></a>
                                                 </div>
                                             </td>
